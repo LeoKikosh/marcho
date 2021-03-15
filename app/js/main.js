@@ -119,3 +119,15 @@ function initializeClock(id, endtime) {
 
 const deadline = $('.promo__clock').attr('data-time');
 initializeClock('promo__clock', deadline);
+
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: {
+      lat: 40.75334960629486,
+      lng: -74.01816627424337
+    },
+    zoom: 10,
+  });
+}
